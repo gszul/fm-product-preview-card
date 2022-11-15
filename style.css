@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: hsl(158, 36%, 37%);
+    --hover-color: hsl(158, 36%, 15%);
+    --secondary-color: hsl(212, 21%, 14%);
+    --tertiary-color: hsl(228, 12%, 48%);
+    --background-color: hsl(30, 38%, 92%);
+    --card-color: hsl(0, 0%, 100%);
+
+
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: var(--tertiary-color);
+}
+
+body {
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+main {
+    height: 100vh;
+    min-height: fit-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-picture {
+    width: 100%;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 2.5rem;
+}
+
+.product-category {
+    margin: 0;
+    letter-spacing: .5rem;
+}
+
+h1 {
+    font-family: Fraunces, serif;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-block: 2rem;
+}
+
+.product-description {
+    line-height: 1.5rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+.price {
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.price-old {
+    text-decoration: line-through;
+    margin: auto;
+}
+
+.add-cart {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--card-color);
+    font-weight: 700;
+}
+
+.add-cart:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.icon {
+    margin-inline: 1rem;
+}
+
+@media (min-width: 450px) {
+    article {
+        max-width: 600px;
+    }
+
+    .product-picture {
+        width: 50%;
+    }
+
+    .product-section {
+        width: 50%;
+    }
+    
+}
